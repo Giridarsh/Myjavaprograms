@@ -2,12 +2,12 @@ import java.io.*;
 import java.lang.*;
 import java.util.*;
 
-class bank
+class bank1
 {
-    static public void main(String asd[])
+    int balance = 5000, withdraw, deposit;
+    DataInputStream s = new DataInputStream(System.in);
+    bank1()
     {  
-      int balance = 5000, withdraw, deposit;
-      Scanner s = new Scanner(System.in);
       try
       {
             System.out.println("Automated Teller Machine");
@@ -16,13 +16,13 @@ class bank
             System.out.println("Choose 3 for Check Balance");
             System.out.println("Choose 4 for EXIT");
             System.out.println("Choose the operation you want to perform:");
+            int a = Integer.parseInt(s.readLine());
 
-            int a = s.nextInt();
             switch(a)
             {
                 case 1:
                 System.out.print("Enter money to be withdrawn:");
-                withdraw = s.nextInt();
+                withdraw = s.readLine();
                 if(balance >= withdraw)
                 {
                     balance = balance - withdraw;
@@ -37,7 +37,7 @@ class bank
  
                 case 2:
                 System.out.print("Enter money to be deposited:");
-                deposit = s.nextInt();
+                deposit = s.readLine();
                 balance = balance + deposit;
                 System.out.println("Your Money has been deposited successfully");
                 System.out.println("");
@@ -56,5 +56,13 @@ class bank
           catch(Exception e) {} 
         
      }   
+}
+
+class bank
+{
+      static public void main(String asd[])
+      { 
+            bank1 obj = new bank1();
+      }
 }
 
