@@ -2,7 +2,7 @@ abstract class num
 {
       abstract void sum();
 }
-class intesum extends num
+class intsum extends num
 {
       void sum()
       {
@@ -15,9 +15,9 @@ class flosum extends num
 {
       void sum()
       {
-            float f1=12.00f,f2=24.00f,f3;
-            f3 = f1+f2;
-            System.out.println("FLOAT VALUE = " + f3);
+            float f1=12.00f,f2=24.00f,f;
+            f = f1+f2;
+            System.out.println("FLOAT VALUE = " + f);
       }
 }
 class fourty
@@ -25,7 +25,7 @@ class fourty
       static public void main(String asd[])
       {
            num obj;
-           obj=new intesum();
+           obj=new intsum();
            obj.sum();
            obj=new flosum();
            obj.sum();
