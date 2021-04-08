@@ -1,11 +1,11 @@
 abstract class Vehicle
 {
-      private String _color;
-      private String _model;
+      private String color;
+      private String model;
       Vehicle(String color, String model)
       {
-            this._color = color;
-            this._model = model;
+            this.color = color;
+            this.model = model;
       }
       abstract void drive();
       abstract void stop();
@@ -36,11 +36,11 @@ class Ship extends Vehicle
 }
 class Car extends Vehicle
 {
-      private int _doors;
+      private int doors;
       public Car(String color, String model, int doors)
       {
             super(color, model);
-            this._doors = doors;
+            this.doors = doors;
       }
       void drive()
       {
