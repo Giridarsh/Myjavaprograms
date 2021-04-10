@@ -36,13 +36,13 @@ class shape1
     static public void main(String asd[])
     {
         Shape obj;
-        Rectangle obj1 = new Rectangle();
-        obj = obj1; 
-        obj.setValues(78, 5);
+        Rectangle rect = new Rectangle();
+        obj = rect; 
+        obj.setValues(13, 5);
         System.out.println("Area of rectangle : " + obj.getArea());
-        Triangle obj2 = new Triangle();        
-        obj = obj2;        
-        obj.setValues(34,3);    
+        Triangle trian = new Triangle();        
+        obj = trian;        
+        obj.setValues(47,3);    
         System.out.println("Area of triangle : " + obj.getArea());
     }
 }

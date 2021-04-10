@@ -1,9 +1,9 @@
 abstract class Shape
 {
-      private String colour="red"; 
+      private String colour="Red"; 
       Shape()
       {
-            System.out.println("Shape is called");
+            System.out.println("\nShape is called");
       }
       public String getColour()
       {
@@ -15,16 +15,16 @@ abstract class Shape
       }
       public String toString()
       {
-            return("Colour is:"+ colour);
+            return("Colour is :"+ colour);
       }
       abstract double findArea();
 }
 class Square extends Shape
 {
-      private double length;
+      private double a;
       public Square(double l)
       {
-            length=l;
+            a=l;
             System.out.println("Square  is called");
       }
       public String toString()
@@ -36,7 +36,7 @@ class Square extends Shape
       }
       public double findArea()
       {
-            return length*length;
+            return a*a;
       }
 }
 
