@@ -1,28 +1,28 @@
-interface Vehical
+interface Vehicle
 {
-      public void changeGear(int newValue);
-      public void speedUp(int increment);
-      public void applyBrakes(int decrement);
+      public void Gear(int newValue);
+      public void Speed(int increment);
+      public void Brakes(int decrement);
 }
-class Car implements Vehical
+class Car implements Vehicle
 {
       int speed = 0;
       int gear = 1;
-      void Gear(int Value)
+      public void Gear(int Value)
       {
             gear = Value;
       }
-      void Up(int increment)
+      public void Speed(int increment)
       {
             speed = speed + increment; 
       }
-      void Brakes(int decrement)
+      public void Brakes(int decrement)
       {
             speed = speed - decrement;
        }
-       void print()
+       public void print()
       {
-            System.out.println(" speed:" + speed + " gear:" + gear);
+            System.out.println(" speed : " + speed + " gear  : " + gear);
       }
 }
 class fourtysix
@@ -30,9 +30,9 @@ class fourtysix
       static public void main(String asd[])
       {
             Car obj = new Car();
-            obj.Gear();
-            obj.Up();
-            obj.Brakes();
+            obj.Gear(3);
+            obj.Speed(50);
+            obj.Brakes(2);
             obj.print();
       }
 } 	
