@@ -19,7 +19,6 @@ class child extends parents
       public void disp()
       {
             System.out.println("Child Method");
-            this.disp();
       }
 }
 
@@ -28,7 +27,7 @@ class parent
 {
       static public void main(String asd[])
       {
-            parents obj = new parents;
+            child obj = new child;
             obj.disp();
       }
 }
