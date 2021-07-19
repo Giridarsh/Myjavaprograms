@@ -8,6 +8,7 @@ class set extends Frame
     Label l4 = new Label("Password : ");
     Label l5 = new Label("Date of Birth : ");
     Label l6 = new Label("Blood Group : ");
+    Button b1 =  new Button("Submit");
 
     TextField t1 = new TextField();
     TextField t2 = new TextField();
@@ -18,12 +19,13 @@ class set extends Frame
     
     set()
     {
+        setLayout(null);
         setVisible(true);
-        setSize(400,600);
+        setSize(200,400);
         setBackground(Color.yellow);
         setTitle("Form");
 
-        Panel p1 = new Panel(new GridLayout(6,6));
+        Panel p1 = new Panel(new GridLayout(6,2));
         p1.add(l1);
         p1.add(t1);
         p1.add(l2);
@@ -36,9 +38,12 @@ class set extends Frame
         p1.add(t5);
         p1.add(l6);
         p1.add(t6);
-        add(p1);
         t4.setEchoChar('*');
-        p1.setBounds(40,240,140,10);
+        p1.setBounds(100,100,300,120);
+        add(p1);
+        add(b1);
+        b1.setBounds(250,250,70,30);
+     
 
     }
 }
