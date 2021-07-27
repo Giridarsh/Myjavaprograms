@@ -43,7 +43,7 @@ public class mousekeylistener extends JPanel implements KeyListener,MouseListene
 
     JMenuBar menubar = new JMenuBar();
     JMenu menu = new JMenu("menu");
-    public mousekeylistener() {
+    public mousekeylistener  () {
 
     JMenu speed = new JMenu("speed");
     JMenu size = new JMenu("Size");
